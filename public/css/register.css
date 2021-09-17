@@ -1,0 +1,130 @@
+.body-main{
+    margin:0;
+    background:darkblue;
+}
+*{
+    box-sizing:border-box;
+}
+body{
+    padding:0;
+    margin:0;
+    border:0;
+}
+.vh-height{
+    min-height: 100vh;
+}
+.row-class{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+}
+.form-class{
+    background:rgb(235, 235, 247);
+    min-height:100vh;
+}
+.form-box{
+    min-height:80vh;
+    position:absolute;
+    top:100px;
+    left:150px;
+    right:150px;
+    background:white;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+
+}
+.box-1, .box-2{
+    min-height: 60vh;
+    
+}
+.box-1{
+    background:url('/images/group-3.png');
+    border-radius: 20px;
+    
+}
+
+.box-2{
+    padding:40px;
+    background:rgb(241, 241, 245);
+    
+}
+.form-1{
+    margin: 1rem 3rem ;
+    padding:2px 2rem;
+}
+.form-login{
+    margin:5rem;
+    padding:3rem 1rem;
+}
+.email-input{
+    margin-left:4.1rem;
+}
+
+.user-input{
+    margin-left:2rem;
+}
+.password-input{
+    margin-left:2.2rem;
+}
+
+.btnn{
+    width:250px;
+    background:blue;
+    margin:5px;
+    padding:10px;
+    border-radius:5px;
+}
+.btnn-reg{
+    width:300px;
+    background:blue;
+    margin:5px;
+    padding:10px;
+    border-radius:5px;
+}
+.register-div{
+    min-height: 100vh;
+    background:linear-gradient(skyblue,darkblue)
+}
+.register-container{
+    height:690px;
+    width:500px;
+    background:white;
+    color:black;
+    position:absolute;
+    left:470px;
+    top:80px;
+    padding:5px;
+    border-radius: 70px;
+    display:flex;
+    flex-direction: column
+  
+}
+
+.img-divs{
+    margin:1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
