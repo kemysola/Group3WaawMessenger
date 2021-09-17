@@ -56,20 +56,27 @@ app.use(passport.session());
 app.use(logger('dev'));
 app.use(flash());
 
-app.use(globalVariables);
+//app.use(globalVariables);
 
 //Views Engine
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-const defaultRoutes = require('./routes/default/default.routes');
-const authRoutes = require('./routes/auth/auth.routes');
-const User = require('./models/User');
+//const defaultRoutes = require('./routes/default/default.routes');
+//const authRoutes = require('./routes/auth/auth.routes');
+//const User = require('./models/User');
 
 
 
 
+app.get('/home',(req,res) =>{
+    res.render('auth/register')
+})
 
+app.get('/login',(req,res)=>{
+    res.render('auth/login')
+
+})
 
 
 
