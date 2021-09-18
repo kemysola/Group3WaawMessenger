@@ -1,15 +1,20 @@
-<%-include('../partials/header.ejs')-%>
-<div class='register-div register-divs'>
+<%-include('../partials/head')-%>
+
+<div class='register-div'>
     <div class='register-container'>
         <div class='img-divs'>
             <img class='center' src='/images/group-1.jpg' height='150'>
         </div>
         <div><h3 class='text-center my-3 py-3'>Welcome To GG-3</h3>
             <form class='form-1 form-ct' action='' method='POST'>
+        <div>
+            <span><center><%- include('../messages') -%></center></span>
+            <h3 class='text-center my-3 py-3'>Welcome To GG-3</h3>
+            <form class='form-1' action='/auth/register' method='POST'>
                         <p>REGISTER TO GET STARTED</p>
                         <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Username:</label>
-                        <input type="email" class="col-form-control user-input" id="exampleInputEmail1" aria-describedby="emailHelp" name='username' placeholder='Adams Pauls'>
+                        <input type="text" class="col-form-control user-input" id="exampleInputEmail1" aria-describedby="emailHelp" name='username' placeholder='Adams Pauls'>
                     </div>
                     <div class="mb-3 ">
                         <label for="exampleInputEmail1" class="form-label">Email:</label>
@@ -25,9 +30,9 @@
                     </div>
                     <button type="submit" class="btn  btnn-reg text-white">Register</button>
                     <div>
-                        <p class='py-1'>Already have an Account? Log In</p>
+                        <p class='py-1'>Already have an Account? <a href="/auth/login">Log In</a></p>
                     </div>
-                    </form>
+            </form>
         </div>        
     </div>
 </div>

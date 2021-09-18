@@ -1,3 +1,11 @@
+.alert-success  {
+    color: green;
+}
+
+.alert-error {
+    color: red;
+}
+
 .body-main{
     margin:0;
     background:darkblue;
