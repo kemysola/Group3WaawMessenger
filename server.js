@@ -76,7 +76,7 @@ app.get('/home',(req,res) =>{
 })
 
 app.get('/login',(req,res)=>{
-    res.render('auth/resetPassword')
+    res.render('auth/login')
 
 })
 

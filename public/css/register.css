@@ -18,61 +18,15 @@ body{
     grid-template-columns: 1fr 1fr;
     justify-content: space-evenly;
 }
-.form-class{
-    background:rgb(235, 235, 247);
-    min-height:100vh;
-}
-.form-box{
-    min-height:80vh;
-    max-height: 80vh;
-    position:absolute;
-    top:100px;
-    left:150px;
-    right:150px;
-    bottom:100px;
-    background:white;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    border-radius: 20px;
 
-}
-.box-1, .box-2{
-    min-height: 60vh;
-    
-}
-.box-1{
-    background:url('/images/group-3.png');
-    border-radius: 20px;
-    
-}
-
-.box-2{
-    padding:40px;
-    background:rgb(241, 241, 245);
-    
-}
-
-.form-login{
-    margin:5rem;
-    padding:3rem 1rem;
-}
 .email-input{
     margin-left:4.1rem;
 }
-
 .user-input{
     margin-left:2rem;
 }
 .password-input{
     margin-left:2.2rem;
-}
-
-.btnn{
-    width:250px;
-    background:blue;
-    margin:5px;
-    padding:10px;
-    border-radius:5px;
 }
 .btnn-reg{
     width:300px;
@@ -81,20 +35,14 @@ body{
     padding:10px;
     border-radius:5px;
 }
-
-
-
 .img-divs{
     margin:1rem;
 }
-
-
-
-    .register-div{
+.register-div{
     min-height: 100vh;
     background:linear-gradient(skyblue,darkblue)
 }
-    .register-container{
+.register-container{
     height:690px;
     width:500px;
     background:white;
@@ -107,7 +55,7 @@ body{
     display:flex;
     flex-direction: column;
 }
-    .form-1{
+.form-1{
     margin: 1rem 3rem ;
     padding:2px 2rem;
 }
@@ -118,6 +66,62 @@ body{
     background-position: center;
     background-size: cover;
     min-height:500px;
+}
+@media (max-width:600px){
+.register-container{
+    height:700px;
+    width:400px;
+    background:white;
+    color:black;
+    position:absolute;
+    left:50px;
+    top:80px;
+    right:50px;
+    bottom:80px;
+    padding:5px;
+    border-radius: 70px;
+    display:flex;
+    flex-direction: column;
+}
+.form-1{
+    margin: 1rem ;
+    
+}
+    
+}
+@media (min-width:600px){
+.register-container{
+    height:700px;
+    width:600px;
+    background:white;
+    color:black;
+    position:absolute;
+    left:50px;
+    top:80px;
+    right:50px;
+    bottom:80px;
+    padding:5px;
+}
+.form-1{
+    margin: 2rem  3rem;
+    
+}
+@media (min-width:992px){
+.register-container{
+    height:690px;
+    width:500px;
+    background:white;
+    color:black;
+    position:absolute;
+    left:470px;
+    top:80px;
+    padding:5px;
+}
+.form-1{
+    margin: 1rem  2rem;
+    
+}
+    
 }
 
 
