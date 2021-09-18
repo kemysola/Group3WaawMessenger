@@ -8,10 +8,10 @@ const LocalStraregy = require('passport-local').Strategy;
 
 //local strategy setup
 passport.use(new LocalStraregy({
-    usernameField: 'value',
+    usernameField: 'username',
     passReqToCallback: true
-}, async (req, value, password, done) => {
-    await User.findOne({$or: [{username: value}, {email: value}]})
+}, async (req, username, password, done) => {
+    await User.findOne({$or: [{username: username}, {email: username}]})
     .then(async (user) => { 
         console.log(">>>>>>::: ", user);
         if (!user) return done(null, false,req.flash('error-message', 'User not found'));
