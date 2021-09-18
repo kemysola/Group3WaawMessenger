@@ -64,6 +64,23 @@ const defaultRoutes = require('./routes/default/default.routes');
 const authRoutes = require('./routes/auth/auth.routes');
 //const User = require('./models/User');
 
+
+
+app.get('/',(req,res)=>{
+    res.render('default/index');
+});
+
+app.get('/home',(req,res) =>{
+    res.render('auth/register');
+});
+
+app.get('/login',(req,res)=>{
+    res.render('auth/resetPassword');
+
+});
+
+
+
 //routes setup
 app.use('/', defaultRoutes);
 app.use('/auth', authRoutes);
