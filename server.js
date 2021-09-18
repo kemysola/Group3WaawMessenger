@@ -67,14 +67,16 @@ app.set('view engine', 'ejs');
 //const User = require('./models/User');
 
 
-
+app.get('/',(req,res)=>{
+    res.render('default/index')
+})
 
 app.get('/home',(req,res) =>{
     res.render('auth/register')
 })
 
 app.get('/login',(req,res)=>{
-    res.render('auth/login')
+    res.render('auth/resetPassword')
 
 })
 
